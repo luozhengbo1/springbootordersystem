@@ -1,5 +1,5 @@
 server:
-  port: 8013
+  port: 8020
 spring:
   application:
     name: menu
@@ -13,3 +13,8 @@ spring:
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.entity
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8763/eureka/
+
