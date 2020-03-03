@@ -1,0 +1,15 @@
+server:
+  port: 8013
+spring:
+  application:
+    name: menu
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    name: orderingsystem
+    url: jdbc:mysql://10.10.11.102:3306/ordering
+    username: lzb
+    password: 123456
+#    mybatis 映射
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.entity
