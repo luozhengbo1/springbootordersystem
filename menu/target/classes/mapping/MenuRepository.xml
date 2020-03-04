@@ -2,11 +2,33 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.repository.MenuRepository">
 
-    <select id="findAll"  resultType="Menu">
+<!--    关联-->
+    <resultMap id="menuMap" type="com.entity.Menu">
+<!--        自己的字段-->
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="price" property="price"></result>
+        <result column="flavor" property="flavor"></result>
+<!--        映射的表  select要使用的mapper方法  column 传过去的字段 -->
+        <association property="type"  select="com.repository.TypeRepository.findById" column="tid"></association>
+    </resultMap>
+    <!--    关联-->
+    <resultMap id="menuUpdateMap" type="com.entity.Menu">
+        <!--        自己的字段-->
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="price" property="price"></result>
+        <result column="flavor" property="flavor"></result>
+        <!--        映射的表  select要使用的mapper方法  column 传过去的字段 -->
+        <association property="type"  select="com.repository.TypeRepository.findById" column="tid"></association>
+    </resultMap>
+
+<!--印射修改    -->
+    <select id="findAll"  resultMap="menuMap">
         select * from t_menu limit #{param1} ,#{param2}
 
     </select>
-    <select id="findById" parameterType="long" resultType="Menu">
+    <select id="findById" parameterType="long"  resultMap="menuMap">
         select * from t_menu  where id = #{id}
     </select>
 
@@ -14,15 +36,16 @@
         select count(*) from  t_menu
     </select>
 
-<!--    <insert id="save" parameterType="com.entity.Menu" >-->
-<!--        insert into t_menu(name,price,flavor,tid) values(#{name},#{price},#{flavor},#{tid})-->
-<!--    </insert>-->
+<!--    tid 不一样。-->
+    <insert id="save" parameterType="com.entity.Menu" >
+        insert into t_menu(name,price,flavor,tid) values(#{name},#{price},#{flavor},#{type.id})
+    </insert>
 
-<!--    <update id="update" parameterType="com.entity.Menu"   >-->
-<!--        update t_menu set name=#{name},price = #{price}, flavor = #{flavor},tid=#{tid} where id = #{id}-->
-<!--    </update>-->
+    <update id="update" parameterType="com.entity.Menu"   >
+        update t_menu set name=#{name},price = #{price}, flavor = #{flavor},tid=#{type.id} where id = #{id}
+    </update>
 
-<!--    <delete id="deleteById" parameterType="int">-->
-<!--        delete from t_menu  where id = #{id}-->
-<!--    </delete>-->
+    <delete id="deleteById" parameterType="long">
+        delete from t_menu  where id = #{id}
+    </delete>
 </mapper>

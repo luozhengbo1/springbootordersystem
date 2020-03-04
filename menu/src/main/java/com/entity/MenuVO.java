@@ -15,4 +15,6 @@ public class MenuVO {
     private String msg;
     private int count;
     private List<Menu> data;
+
+
 }

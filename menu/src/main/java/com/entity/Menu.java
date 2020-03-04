@@ -8,5 +8,7 @@ public class Menu {
     private String name;
     private Double price;
     private String flavor;
-    private int tid;
+//    private int tid;
+    //使用关联查询
+    private Type type;
 }
