@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,31 @@
     <link rel="stylesheet" th:href="@{/layui/dist/css/layui.css}">
 </head>
 <body>
-    <div>w3w34</div>
+
+<table class=" layui-hide" id="test"></table>
+
+
+<script th:src="@{/layui/dist/layui.js}" charset="utf-8"></script>
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script th:inline="none">
+    layui.use('table', function(){
+        var table = layui.table;
+
+        table.render({
+            elem: '#test'
+            ,url:'/client/findAll/'
+            ,cellMinWidth: 80
+            ,cols: [[
+                {field:'id', width:80, title: 'ID', sort: true}
+                ,{field:'name', width:80, title: '菜名'}
+                ,{field:'price', width:80, title: '价格',sort: true}
+                ,{field:'flavor', width:80, title: '城市'}
+                ,{field:'tid',  width: '30%',title: 'tid'} //minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
+            ]]
+            ,page: true
+        });
+    });
+</script>
+
 </body>
 </html>
