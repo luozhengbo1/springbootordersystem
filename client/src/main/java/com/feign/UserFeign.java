@@ -18,7 +18,7 @@ public interface UserFeign {
     public Integer count();
 
     //删除
-    @DeleteMapping("/user/deleteById/{id}")
+    @GetMapping("/user/deleteById/{id}")
     public void deleteById(@PathVariable("id") long id);
 
 

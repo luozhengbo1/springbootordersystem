@@ -12,5 +12,5 @@ public interface UserRepository {
     public Integer count();
     public void save(User user);
     public void update(User user);
-    public  void deleteById(int id);
+    public  void deleteById(long id);
 }

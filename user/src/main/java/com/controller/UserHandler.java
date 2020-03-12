@@ -40,8 +40,8 @@ public class UserHandler {
         userRepository.update(user);
     }
 
-    @DeleteMapping("/deleteById/{id}")
-    public void deleteById(@PathVariable("id") int id){
+    @GetMapping("/deleteById/{id}")
+    public void deleteById(@PathVariable("id") long id){
         userRepository.deleteById(id);
     }
 

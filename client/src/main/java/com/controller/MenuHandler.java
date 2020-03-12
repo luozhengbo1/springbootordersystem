@@ -32,7 +32,7 @@ public class MenuHandler {
         return menuFegin.count();
     }
 
-        @GetMapping("/redirect/{location}")
+    @GetMapping("/redirect/{location}")
     public String redirect(@PathVariable("location")  String location){
         return location;
     }

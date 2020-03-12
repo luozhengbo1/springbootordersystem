@@ -1,6 +1,7 @@
 package com.controller;
 
 import com.entity.User;
+import com.entity.UserVO;
 import com.feign.UserFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.websocket.server.PathParam;
+import java.util.Date;
 import java.util.List;
 
 //@RestController
@@ -18,41 +20,41 @@ public class UserHandler {
     @Autowired
     private UserFeign userFeign;
 
-//    @GetMapping("/findAll")
-//    @ResponseBody //返回数据 注意参数 绑定
-//    public List<User> findAll(@PathParam("page") int page, @PathParam("limit") int limit){
-//        int    index = (page - 1) * limit;
-//        return userFeign.findAll(index, limit);
-//    }
     @GetMapping("/findAll")
-    public ModelAndView findAll(@PathParam("page") int page, @PathParam("limit") int limit){
+    @ResponseBody //返回数据 注意参数 绑定
+    public UserVO findAll(@PathParam("page") int page, @PathParam("limit") int limit){
         int    index = (page - 1) * limit;
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("user_manage");
-        modelAndView.addObject("user",userFeign.findAll(index,limit));
-        //知道所有的分类才可以选
-        return  modelAndView;
+        UserVO userVO = new UserVO();
+        userVO.setCode(0);
+        userVO.setMsg("");
+        userVO.setCount(userFeign.count());
+        userVO.setData(userFeign.findAll(index,limit));
+        return userVO;
     }
+
+
     @GetMapping("/count")
     public Integer count(){
         return userFeign.count();
     }
 
-        @GetMapping("/redirect/{location}")
+    @GetMapping("/redirect/{location}")
     public String redirect(@PathVariable("location")  String location){
         return location;
     }
 
-    @GetMapping("/deleteById/{id}")
+    @GetMapping("/deleteById/{id}") //这里是一个get 请求
     public String deleteById(@PathVariable("id") long id){
         userFeign.deleteById(id);
-        return "redirect:/user/redirect/index";
+        return "redirect:/user/redirect/user_manage";
     }
     @PostMapping("/save")
     //这里拿到这menu 数据 以json 格式传到menu 工程
-    public String save(User user){
+    //@RequestBody  这里不应该加这个不是一个json 对象
+    public String save( User user){
+        user.setRegisterdate(new Date());//设置当前时间
         userFeign.save(user);
-        return "redirect:/user/redirect/index";
+        return "redirect:/user/redirect/user_manage";
     }
     @GetMapping("/findById/{id}")
     public ModelAndView findById(@PathVariable("id") long id){
@@ -61,15 +63,6 @@ public class UserHandler {
         modelAndView.addObject("user",userFeign.findById(id));
         //知道所有的分类才可以选
         return  modelAndView;
-    }
-
-
-//    @PutMapping("/update")
-//    注意这里是post 请求 用postmapping
-    @PostMapping("/update")
-    public String update(User user){
-        userFeign.update(user);
-        return "redirect:/user/redirect/index";
     }
 
 }
