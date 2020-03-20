@@ -40,7 +40,7 @@ public class MenuHandler {
     @GetMapping("/deleteById/{id}")
     public String deleteById(@PathVariable("id") long id){
         menuFegin.deleteById(id);
-        return "redirect:/menu/redirect/index";
+        return "redirect:/menu/redirect/menu_manage";
     }
 
     @GetMapping("/findTypes")
@@ -58,7 +58,7 @@ public class MenuHandler {
     //这里拿到这menu 数据 以json 格式传到menu 工程
     public String save(Menu menu){
         menuFegin.save(menu);
-        return "redirect:/menu/redirect/index";
+        return "redirect:/menu/redirect/menu_manage";
     }
     @GetMapping("/findById/{id}")
     public ModelAndView findById(@PathVariable("id") long id){
@@ -75,7 +75,7 @@ public class MenuHandler {
     @PostMapping("/update")
     public String update(Menu menu){
         menuFegin.update(menu);
-        return "redirect:/menu/redirect/index";
+        return "redirect:/menu/redirect/menu_manage";
     }
 
 }

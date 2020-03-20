@@ -12,4 +12,8 @@ public interface OrderRepository {
     public List<Order> findAll(int page, int limit);
     public int countByUid(int uid);
     public  List<Order> findByUIdOrder(int page, int limit, int uid);
+
+    public int countByState(int state);
+
+    public void updateState(int  id);
 }

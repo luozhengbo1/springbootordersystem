@@ -38,15 +38,10 @@ public class UserHandler {
         return userFeign.count();
     }
 
-    @GetMapping("/redirect/{location}")
-    public String redirect(@PathVariable("location")  String location){
-        return location;
-    }
-
     @GetMapping("/deleteById/{id}") //这里是一个get 请求
     public String deleteById(@PathVariable("id") long id){
         userFeign.deleteById(id);
-        return "redirect:/user/redirect/user_manage";
+        return "redirect:/menu/redirect/user_manage";
     }
     @PostMapping("/save")
     //这里拿到这menu 数据 以json 格式传到menu 工程
@@ -54,7 +49,7 @@ public class UserHandler {
     public String save( User user){
         user.setRegisterdate(new Date());//设置当前时间
         userFeign.save(user);
-        return "redirect:/user/redirect/user_manage";
+        return "redirect:/menu/redirect/user_manage";
     }
     @GetMapping("/findById/{id}")
     public ModelAndView findById(@PathVariable("id") long id){

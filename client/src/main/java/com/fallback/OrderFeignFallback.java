@@ -26,6 +26,16 @@ public class OrderFeignFallback implements FallbackFactory<OrderFeign> {
                 System.out.println("进入回调。。。。");
                 return null;
             }
+
+            @Override
+            public OrderVO findAll(int index, int limit) {
+                return null;
+            }
+
+            @Override
+            public void updateState(int id) {
+
+            }
         };
     }
 }

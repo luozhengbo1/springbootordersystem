@@ -4,10 +4,7 @@ import com.entity.Order;
 import com.entity.OrderVO;
 import com.fallback.OrderFeignFallback;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 @FeignClient(value = "order",fallback = OrderFeignFallback.class)
 public interface OrderFeign {
@@ -20,4 +17,11 @@ public interface OrderFeign {
     int count(int uid);
     @GetMapping("/order/findByUIdOrder/{page}/{limit}/{uid}")
     OrderVO findByUIdOrder(@PathVariable("page") int page, @PathVariable("limit") int limit, @PathVariable("uid") int uid);
+
+    @GetMapping("/order/findAll/{index}/{limit}")
+    OrderVO findAll(@PathVariable("index") int index,@PathVariable("limit") int limit);
+
+    @PutMapping("/order/updateState/{id}")
+    void updateState(@PathVariable("id") int id);
+
 }

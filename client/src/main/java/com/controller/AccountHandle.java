@@ -45,7 +45,7 @@ public class AccountHandle {
                     admin.setId(id);
                     admin.setUsername(username);
                     session.setAttribute("admin",admin);
-                    result = "";
+                    result = "main";
                     break;
             }
         }

@@ -28,8 +28,7 @@ public class OrderHandle {
         menu.setId(mid);
         order.setMenu(menu);
         orderFeign.save(order);
-        return "redirect:/menu/redirect/index";
-//        return "index";
+        return "order";
     }
 
     @GetMapping("/count/{uid}")
@@ -46,4 +45,20 @@ public class OrderHandle {
         int index  = (page-1)*limit;
         return orderFeign.findByUIdOrder(index,limit, (int) user.getId());
     }
+
+    @GetMapping("/findAll")
+    //这里和layui 框架交流反数据
+    @ResponseBody
+    public OrderVO findAll(@PathParam("page") int page,@PathParam("limit") int limit ){
+        int index  = (page-1)*limit;
+        return orderFeign.findAll(index,limit);
+    }
+
+    //这里直接跟前端对接不能用put
+    @GetMapping("/updateState/{id}")
+    public String updateState(@PathVariable("id") int id){
+        orderFeign.updateState(id);
+        return "redirect:/menu/redirect/order_handler";
+    }
+
 }
