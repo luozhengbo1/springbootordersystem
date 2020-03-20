@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: account
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://127.0.0.1:8764
+      fail-fast: true

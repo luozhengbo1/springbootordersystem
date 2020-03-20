@@ -2,18 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc26e998-6f74-4056-9337-4ba207003ecf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/entity/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/resources/static/user_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/AccountApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/controller/AccountHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/entity/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/repository/AdminRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/resources/mapping/AccountRepository.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/resources/mapping/UserRepository.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/controller/AccountHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/controller/OrderHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/entity/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/entity/OrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/fallback/OrderFeignFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/feign/AccountFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/feign/OrderFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/static/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/static/menu_manage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/static/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/static/order_handler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/account-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/entity/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/entity/OrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/entity/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/resources/mapping/MenuRepository.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/resources/mapping/OrderRepository.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/resources/mapping/TypeRepository.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/controller/MenuHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/controller/MenuHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/controller/UserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/controller/UserHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/feign/UserFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/feign/UserFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/com/controller/UserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/controller/UserHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/controller/UserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/controller/UserHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/com/controller/UserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/controller/UserHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/order-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/order-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/target/classes/order-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/target/classes/order-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/OrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/controller/OrderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/controller/OrderHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/classes/com/OrderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/OrderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/target/classes/com/controller/OrderHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/order/target/classes/com/controller/OrderHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,31 +67,16 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="ordering@10.10.11.102" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="ordering@10.10.11.102" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="ordering@10.10.11.102" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ordering: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
+        <option value="spring-beans.schema" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,13 +100,16 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1YPlqNcGPAEnK0M9u0WLyobKPEZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -96,30 +120,33 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/main/resources/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/order/src/main/resources/mapping" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\order\src\main\resources\mapping" />
+      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\client\src\main\resources\static" />
       <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\configserver\src\main\resources" />
-      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\configserver\src\main\resources\shared" />
-      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\configserver\src\main\resources\config" />
-      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\configserver\src\main" />
+      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\order\src\main\java\com\entity" />
+      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\account\src\main\resources\mapping" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.entity" />
       <recent name="com.feign" />
       <recent name="com.controller" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\client\src\main\resources\static" />
-      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\user\src\main\resources\mapping" />
-      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\user\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\configserver\src\main\resources" />
-      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\menu\src\main\resources\mapping" />
+      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\configserver\src\main\resources\shared" />
+      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\configserver\src\main\resources\config" />
+      <recent name="C:\Users\Administrator\IdeaProjects\aispringclouddemo\configserver\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -129,7 +156,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.ClientApplication">
+    <configuration name="AccountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="account" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.AccountApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="client" />
       <extension name="coverage">
@@ -147,26 +187,11 @@
       <module name="configserver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.*" />
+          <option name="PATTERN" value="com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ConfigServerApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="eurekaserver" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.EurekaServerApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,43 +200,42 @@
       <module name="menu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.*" />
+          <option name="PATTERN" value="com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.MenuApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="user" />
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="order" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.UserApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.OrderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.AccountApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.MenuApplication" />
       <item itemvalue="Spring Boot.ClientApplication" />
-      <item itemvalue="Spring Boot.UserApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OrderApplication" />
         <item itemvalue="Spring Boot.ClientApplication" />
-        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.MenuApplication" />
+        <item itemvalue="Spring Boot.AccountApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +243,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.31143016" />
+          <option name="contentProportion" value="0.25867507" />
           <treeState>
             <expand>
               <path>
@@ -262,12 +286,21 @@
       <workItem from="1583930932981" duration="744000" />
       <workItem from="1583931722508" duration="4053000" />
       <workItem from="1583984739434" duration="174000" />
-      <workItem from="1583991202588" duration="5701000" />
+      <workItem from="1583991202588" duration="6434000" />
+      <workItem from="1584157596586" duration="22274000" />
+      <workItem from="1584192618920" duration="2187000" />
+      <workItem from="1584451392805" duration="8253000" />
+      <workItem from="1584542807306" duration="4591000" />
+      <workItem from="1584597691334" duration="16026000" />
+      <workItem from="1584674799809" duration="4207000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="704" y="10" key="#Project_Structure" timestamp="1582892753638">
@@ -282,86 +315,98 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="12" y="206" width="1359" height="815" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583936482718" />
-    <state x="579" y="285" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582877148602">
+    <state x="579" y="285" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584161890301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="579" y="285" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582877148602" />
-    <state x="525" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583202482710">
+    <state x="579" y="285" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584161890301" />
+    <state x="677" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1584673235141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="525" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583202482710" />
+    <state x="677" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584673235141" />
+    <state x="647" y="325" width="625" height="402" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584630067860">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="647" y="325" width="625" height="402" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1584630067860" />
+    <state x="415" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584171378205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="415" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584171378205" />
     <state x="712" y="147" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583203890149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="712" y="147" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583203890149" />
-    <state x="640" y="159" key="FileChooserDialogImpl" timestamp="1583143294974">
+    <state width="374" height="289" key="DatabaseViewActions_Filter" timestamp="1584684510646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="159" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583143294974" />
-    <state width="1246" height="259" key="GridCell.Tab.0.bottom" timestamp="1584021730769">
+    <state width="374" height="289" key="DatabaseViewActions_Filter/0.0.1920.1040@0.0.1920.1040" timestamp="1584684510646" />
+    <state x="640" y="159" key="FileChooserDialogImpl" timestamp="1584168504966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584021730769" />
-    <state width="1246" height="259" key="GridCell.Tab.0.center" timestamp="1584021730769">
+    <state x="640" y="159" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584168504965" />
+    <state width="1342" height="393" key="GridCell.Tab.0.bottom" timestamp="1584684739298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584021730769" />
-    <state width="1246" height="259" key="GridCell.Tab.0.left" timestamp="1584021730769">
+    <state width="1342" height="393" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584684739298" />
+    <state width="1342" height="393" key="GridCell.Tab.0.center" timestamp="1584684739298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584021730769" />
-    <state width="1246" height="259" key="GridCell.Tab.0.right" timestamp="1584021730769">
+    <state width="1342" height="393" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584684739298" />
+    <state width="1342" height="393" key="GridCell.Tab.0.left" timestamp="1584684739298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584021730769" />
-    <state width="1246" height="259" key="GridCell.Tab.1.bottom" timestamp="1584021730769">
+    <state width="1342" height="393" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584684739298" />
+    <state width="1342" height="393" key="GridCell.Tab.0.right" timestamp="1584684739298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="259" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584021730769" />
-    <state width="1246" height="259" key="GridCell.Tab.1.center" timestamp="1584021730769">
+    <state width="1342" height="393" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584684739298" />
+    <state width="1342" height="393" key="GridCell.Tab.1.bottom" timestamp="1584684739298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="259" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584021730769" />
-    <state width="1246" height="259" key="GridCell.Tab.1.left" timestamp="1584021730769">
+    <state width="1342" height="393" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584684739298" />
+    <state width="1342" height="393" key="GridCell.Tab.1.center" timestamp="1584684739298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="259" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584021730769" />
-    <state width="1246" height="259" key="GridCell.Tab.1.right" timestamp="1584021730769">
+    <state width="1342" height="393" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584684739298" />
+    <state width="1342" height="393" key="GridCell.Tab.1.left" timestamp="1584684739298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="259" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584021730769" />
-    <state width="1246" height="378" key="GridCell.Tab.2.bottom" timestamp="1583333338145">
+    <state width="1342" height="393" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584684739298" />
+    <state width="1342" height="393" key="GridCell.Tab.1.right" timestamp="1584684739298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="378" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583333338145" />
-    <state width="1246" height="378" key="GridCell.Tab.2.center" timestamp="1583333338145">
+    <state width="1342" height="393" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584684739298" />
+    <state width="1174" height="370" key="GridCell.Tab.2.bottom" timestamp="1584684197991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="378" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583333338145" />
-    <state width="1246" height="378" key="GridCell.Tab.2.left" timestamp="1583333338145">
+    <state width="1174" height="370" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584684197991" />
+    <state width="1174" height="370" key="GridCell.Tab.2.center" timestamp="1584684197991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="378" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583333338145" />
-    <state width="1246" height="378" key="GridCell.Tab.2.right" timestamp="1583333338145">
+    <state width="1174" height="370" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584684197991" />
+    <state width="1174" height="370" key="GridCell.Tab.2.left" timestamp="1584684197991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1246" height="378" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583333338145" />
-    <state x="214" y="0" key="SettingsEditor" timestamp="1583931683944">
+    <state width="1174" height="370" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584684197991" />
+    <state width="1174" height="370" key="GridCell.Tab.2.right" timestamp="1584684197991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="214" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583931683944" />
-    <state x="489" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1583991371780">
+    <state width="1174" height="370" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584684197991" />
+    <state x="214" y="0" key="SettingsEditor" timestamp="1584674628690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="489" y="259" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583991371780" />
-    <state x="478" y="108" width="964" height="824" key="find.popup" timestamp="1583140171277">
+    <state x="214" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584674628690" />
+    <state x="489" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1584597689934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="478" y="108" width="964" height="824" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583140171277" />
-    <state x="401" y="152" width="1067" height="888" key="new project wizard" timestamp="1583370671324">
+    <state x="489" y="259" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584597689934" />
+    <state x="478" y="108" width="964" height="824" key="find.popup" timestamp="1584180903030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="401" y="152" width="1067" height="888" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1583370671324" />
+    <state x="478" y="108" width="964" height="824" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584180903030" />
+    <state x="401" y="152" width="1067" height="888" key="new project wizard" timestamp="1584159101969">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="401" y="152" width="1067" height="888" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1584159101969" />
     <state x="453" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1583225731504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

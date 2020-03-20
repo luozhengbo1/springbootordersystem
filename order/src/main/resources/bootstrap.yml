@@ -1,5 +1,4 @@
-#server:
-#  port: 8010
+
 spring:
   application:
     name: order
@@ -13,3 +12,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8763/eureka/
+
+logging:
+  level:
+    com:
+     repository: info

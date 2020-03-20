@@ -1,2 +1,20 @@
 server:
   port: 8010
+spring:
+  application:
+    name: order
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    name: orderingsystem
+    url: jdbc:mysql://10.10.11.102:3306/ordering
+    username: lzb
+    password: 123456
+#    mybatis 映射
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.entity
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8763/eureka/
+
